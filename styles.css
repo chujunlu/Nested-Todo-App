@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin-left: 2em;
+	margin-right: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	color: #4f4f4f;
+}
+
+footer, a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #a0a0a0;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+	height: 100%;
+	margin: .2em 0;
+}
+
+.circle, .showHide, .noSub {
+    width: 1em;
+    height: 100%;
+    margin: .1em .2em;
+    display: inline-block;
+}
+
+.showHide {
+    opacity: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    transition: 0.2s .6s;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5%;
+    box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content p {
+    color: #4f4f4f;
+    padding: .2em .1em .2em 1em;
+    text-decoration: none;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.dropdown-content p:hover {
+	background-color: #2C8CFC;
+	color: #ffffff;
+    cursor: pointer;
+}
+
+input[type=text] {
+    border: none;
+	height: 1.5em;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    width: 20em;
+    margin-left: .5em;
+}
+.completed {
+    color: #8e8e8e;
+    text-decoration-line: line-through;
+}
+
+footer {
+    flex-shrink: 0;
+    font-size: 12px;
+    margin-top: 1em;
+}
